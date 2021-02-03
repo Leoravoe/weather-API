@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+  </head>
+  <body>
+<div class="container">
+    <div class="header">
+      <h1>Weather Forecast</h1>
+      <div id="searchcontainer">
+        <input
+          class="searchcontrol"
+          type="text"
+          placeholder="Enter City Name"
+          id="searchInput"
+        />
+        <button class="searchControl" id="searchBtn">Search</button>
+      </div>
+    </div>
+    <div class="container0">
+        <div class="general-information1">
+            <div class="location">Weather in......</div>
+            <div class="status">
+              <div class="icon-container">
+                  <img src="http://openweathermap.org/img/w/01d.png" id="icon" width="60" height="60"></img>
+              </div>
+              <div class="value">......</div>
+            </div>
+          </div>
+    </div>
+    <div class="container1">
+      <div class="weather-container">
+      <div class="one"><h4>Today Weather</h4></div>
+        <div class="general-information2">
+          <table>
+            <tr>
+              <th><div class="today">Day</div></th>
+            </tr>
+            <tr>
+              <td>Wind</td>
+              <td class="wind">............</td>
+            </tr>
+            <tr>
+              <td>Cloudiness</td>
+              <td class="cloudiness">............</td>
+            </tr>
+            <tr>
+              <td>Pressure</td>
+              <td class="pressure">............</td>
+            </tr>
+            <tr>
+              <td>Humidity</td>
+              <td class="humidity">............</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="weatherday-container">
+        <div class="two"><h4>Next 4 day weather status</h4></div>
+          <div class="datewise">
+              <ul class="date">
+                  <li class="day">
+                      <table class="weather">
+                          <tr>
+                            <th><div class="datestatus1">Date1</div></th>
+                          </tr>
+                          <tr>
+                            <td class="tempstatus1">Temperature </td>
+                            <td class="weatherstatus1"> Weather Details</td>
+                          </tr>
+                      </table>
+                  </li>
+                  <li class="day">
+                    <table class="weather">
+                        <tr>
+                          <th><div class="datestatus2">Date2</div></th>
+                        </tr>
+                        <tr>
+                          <td class="tempstatus2">Temperature </td>
+                          <td class="weatherstatus2"> Weather Detail</td>
+                        </tr>
+                    </table>
+                </li>
+                <li class="day">
+                    <table class="weather">
+                        <tr>
+                          <th><div class="datestatus3">Date3</div></th>
+                        </tr>
+                        <tr>
+                          <td class="tempstatus3">Temperature </td>
+                          <td class="weatherstatus3"> Weather Detail</td>
+                        </tr>
+                    </table>
+                </li>
+                <li class="day">
+                    <table class="weather">
+                        <tr>
+                          <th><div class="datestatus4">Date4</div></th>
+                        </tr>
+                        <tr>
+                          <td class="tempstatus4">Temperature </td>
+                          <td class="weatherstatus4"> Weather Detail</td>
+                        </tr>
+                    </table>
+                </li>
+              </ul>
+          </div>
+      </div>
+      <div class="detailsforhuman">
+        <div class="three"><h4>What to Wear Today</h4></div>
+          <div class="clothingdetails">
+              <ul id="myList">
+                <li class="cloths"></li>
+                <li class="shoes"></li>
+                <li class="umbrella"></li>
+              </ul>
+          </div>
+      </div>
+    </div>
+</div>
+<script src="script.js"></script>
+  </body>
+</html>
